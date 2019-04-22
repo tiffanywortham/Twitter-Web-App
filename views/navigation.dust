@@ -1,0 +1,13 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../resources/style.css">
+</head>
+
+<nav>
+    <div id="navigation">
+        <button class="button" id="login">Login with Twitter</button>
+        <button class="button" id="logout">Logout</button>
+        <button class="button" id="profile">Your profile</button>
+        <button class="button" id="tweets">Interact With CSC365 Tweets</button>
+        <button class="button" id="chart">View CSC365 Tweet Counts</button>
+    </div>
+</nav>

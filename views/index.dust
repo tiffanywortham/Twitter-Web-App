@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Authentication Example</title>
+    <link rel="stylesheet" type="text/css" href="../resources/style.css">
+    <script src="resources/functions.js"></script>
+</head>
+
+<body>
+{>navigation /}
+<h1>Welcome</h1>
+<img src="../resources/bird.png" id="logo">
+</body>
+
+</html>

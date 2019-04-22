@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> CSC365 Tweeeets </title>
+    <link rel="stylesheet" type="text/css" href="../resources/style.css">
+</head>
+
+<body>
+{>navigation /}
+<h1>Interact with some tweets, help urself yo </h1>
+<p>
+    {#search_metadata}
+        Found {count} tweets about {query}.
+    {/search_metadata}
+</p>
+<ul>
+    {#statuses}
+        <li>{>linkedTweet screen_name=user.screen_name id_str=id_str text=text /} <a href="https://twitter.com/intent/favorite?tweet_id={id_str}"> <img src= "../resources/heart.png" id="favorite"> </a>
+        <a href="https://twitter.com/intent/retweet?tweet_id={id_str}"> <img src= "../resources/retweet.png" id="retweet"> </a></li>
+    {/statuses}   
+</ul>
+
+<script src="../resources/functions.js"></script>
+    
+</body>
+
+</html>

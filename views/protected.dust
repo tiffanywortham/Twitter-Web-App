@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="../resources/style.css">
+</head>
+    
+<script src="../resources/functions.js"></script>
+
+<body>
+{>navigation /}
+<h1>Here's Your Stuff!</h1>
+<p>
+    Yo @{screen_name} <img src="{profile_image_url}"/> its you!
+</p>
+<p>
+    {#status}
+        Your last tweet happened at exactly {created_at}
+        {>linkedTweet screen_name=screen_name id_str=id_str text=text /}
+    {/status}
+</p>
+</body>
+
+</html>

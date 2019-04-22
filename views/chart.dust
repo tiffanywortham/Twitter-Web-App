@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tweet Counts</title>
+    <link rel="stylesheet" type="text/css" href="../resources/style.css">
+</head>
+
+<body>
+
+{>navigation /}
+<h1>Tweet Character and Favorite Counts! </h1>
+    
+<script src="../resources/functions.js"></script>
+
+<ul>
+    {#statuses}
+        <li>{>linkedTweet screen_name=user.screen_name id_str=id_str text=text /}</li>
+        <li> Character Count: {text.length} </li>
+        <li> Favorite Count: {favorite_count} </li>
+    {/statuses} 
+</ul>
+
+</body>
+
+</html>
